@@ -1,0 +1,31 @@
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.message {
+    font-size: 22px;
+    padding: 8px;
+    margin-bottom: 3px;
+    border-radius: 15px;
+    width: max-content;
+    max-width: 100%;
+}
+
+.sent {
+    justify-content: flex-end;
+}
+
+.sent .message {
+    background-color: #0082F4;
+    color: white;
+}
+
+.received {
+    justify-content: flex-start;
+}
+
+.received .message {
+    background-color: #D9D9D9;
+    color: #5E5E5E;
+}

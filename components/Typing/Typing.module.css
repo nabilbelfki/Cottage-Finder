@@ -1,0 +1,48 @@
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.typing {
+    padding: 8px;
+    margin-bottom: 3px;
+    border-radius: 15px;
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 100px;
+    gap: 10px;
+}
+
+.indicator {
+    background-color: #D9D9D9;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.indicator:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.indicator:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.indicator:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes blink {
+    0% { background-color: #D9D9D9; }
+    25% { background-color: #949494; }
+    50% { background-color: #B2B2B2; }
+    75% { background-color: #949494; }
+    100% { background-color: #D9D9D9; }
+}

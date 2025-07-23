@@ -1,0 +1,10 @@
+.chat {
+    width: 500;
+    height: 900;
+    max-width: 500;
+    max-height: 900;
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+    position: relative;
+}

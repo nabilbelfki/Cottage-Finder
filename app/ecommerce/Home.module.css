@@ -1,0 +1,29 @@
+.screen {
+    width: 500;
+    height: 900;
+    max-width: 500;
+    max-height: 900;
+    background-color: #F3F3F3;
+    border-radius: 30px;
+    position: relative;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+.header {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 30px 30px 0 30px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 24px;
+}

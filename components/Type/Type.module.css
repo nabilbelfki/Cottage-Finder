@@ -1,0 +1,35 @@
+.type {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: calc(100% - 20px);    
+}
+
+.type input {
+    width: 100%;
+    background-color: #F8F8F8;
+    height: 60px;
+    border-radius: 50px;
+    outline: none;
+    color: #707070;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.send {
+    bottom: 5px;
+    right: 7px;
+    position: absolute;
+    background-color: #56C4FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.send:hover {
+    background-color: #49ACE1;
+}

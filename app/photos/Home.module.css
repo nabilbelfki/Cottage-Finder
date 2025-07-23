@@ -1,0 +1,104 @@
+.screen {
+    width: 600px;
+    height: 900px;
+    max-width: 600px;
+    max-height: 900px;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.photo1 img {
+    border-radius: 30px 30px 0 0;
+    margin-bottom: 10px;
+}
+
+.photo2 img {
+    position: absolute;
+    top: 408.44px;
+    right: 0;
+}
+
+.photo4 img,
+.photo5 img,
+.photo7 img {
+    margin-bottom: 10px;
+}
+
+.photo6 {
+    position: absolute;
+    top: 1337px;
+    right: 0;
+}
+
+.photo8 {
+    position: absolute;
+    top: 1604px;
+    right: 0;
+}
+
+.photo8 img {
+    height: 278.63px;
+}
+
+.fullscreenOverlay {
+  position: absolute; /* Changed from fixed to absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+.fullscreenImageContainer {
+  position: absolute;
+  top: var(--initial-top, 0);
+  left: var(--initial-left, 0);
+  width: var(--initial-width, 0);
+  height: var(--initial-height, 0);
+  animation: scaleUp 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  overflow: hidden;
+}
+
+@keyframes scaleUp {
+  to {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%; /* Changed from 100vw to 100% */
+    max-height: 100%; /* Changed from 100vh to 100% */
+  }
+}
+
+.fullscreenImageContainer.closing {
+  animation: scaleDown 0.3s forwards;
+}
+
+@keyframes scaleDown {
+  from {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  to {
+    top: var(--initial-top, 0);
+    left: var(--initial-left, 0);
+    width: var(--initial-width, 0);
+    height: var(--initial-height, 0);
+  }
+}

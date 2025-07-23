@@ -1,0 +1,13 @@
+.screen {
+    width: 600;
+    height: 900;
+    max-width: 600;
+    max-height: 900;
+    background-color: #011A49;
+    border-radius: 30px;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
